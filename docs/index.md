@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/github/license/bswck/poetry-pipx.svg?label=License)](https://github.com/bswck/poetry-pipx/blob/HEAD/LICENSE)
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-A Poetry plugin that allows pipx to take precedence when installing CLI dependencies.
+A [Poetry](https://python-poetry.org/) plugin that allows [pipx](https://github.com/pypa/pipx#readme) to take precedence when installing CLI dependencies.
 
 # Installation
 If you want to…
@@ -16,16 +16,8 @@ If you want to…
 
 
 ## …use this tool in your project 💻
-You might simply install it with pip:
-
 ```shell
-pip install poetry-pipx
-```
-
-If you use [Poetry](https://python-poetry.org/), then run:
-
-```shell
-poetry add poetry-pipx
+poetry self add poetry-pipx
 ```
 
 ## …contribute to [poetry-pipx](https://github.com/bswck/poetry-pipx) 🚀
