@@ -57,18 +57,9 @@ poetry self add poetry-pipx
     git clone https://github.com/your-username/poetry-pipx path/to/poetry-pipx
     cd path/to/poetry-pipx
     poetry env use $(cat .python-version)
-    ```
-
-    If you use pipx, run the following command to install dev dependencies globally:
-    ```shell
-    poetry install --without=dev
-    poetry pipx install dev
-    ```
-    Otherwise, run:
-
-    ```shell
     poetry install
     ```
+
     Next up, simply activate the virtual environment and install pre-commit hooks:
 
     ```shell
