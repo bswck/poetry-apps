@@ -3,9 +3,9 @@
 from cleo.events.console_command_event import ConsoleCommandEvent
 from cleo.events.console_events import COMMAND
 from cleo.events.event_dispatcher import EventDispatcher
+from cleo.io.io import IO
 from poetry.console.application import Application
 from poetry.console.commands.installer_command import InstallerCommand
-from poetry.console.io import IO
 from poetry.plugins.application_plugin import ApplicationPlugin
 
 from poetry_pipx.installer import PipxPrecedenceInstaller
@@ -18,11 +18,12 @@ class PipxPlugin(ApplicationPlugin):
 
     def activate(self, application: Application) -> None:
         """Activate the plugin."""
-        application.event_dispatcher.add_listener(
-            COMMAND,
-            self.on_command,
-            priority=PRIORITY,
-        )
+        if application.event_dispatcher:
+            application.event_dispatcher.add_listener(
+                COMMAND,
+                self.on_command,  # type: ignore[arg-type]
+                priority=PRIORITY,
+            )
 
     def on_command(
         self,

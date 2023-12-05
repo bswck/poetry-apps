@@ -8,6 +8,6 @@ from poetry.installation.installer import Installer
 class PipxPrecedenceInstaller(Installer):
     """A pipx-aware installer for Poetry."""
 
-    def _do_install(self) -> None:
+    def _do_install(self) -> int:
         """Install packages."""
         return super()._do_install()
