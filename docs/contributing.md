@@ -1,23 +1,23 @@
 
-# Contributing to [poetry-pipx](https://github.com/bswck/poetry-pipx) 🎉
+# Contributing to [poetry-apps](https://github.com/bswck/poetry-apps) 🎉
 Contributions are very welcome. 🚀
 
-There are many ways to contribute, ranging from **writing tutorials and improving the documentation**, to **submitting bug reports and feature requests** or **writing code** which can be incorporated into poetry-pipx.
+There are many ways to contribute, ranging from **writing tutorials and improving the documentation**, to **submitting bug reports and feature requests** or **writing code** which can be incorporated into poetry-apps.
 
 ## Report bugs and request features 🐛
-Report these in the [issue tracker](https://github.com/bswck/poetry-pipx/issues).
+Report these in the [issue tracker](https://github.com/bswck/poetry-apps/issues).
 Relevant forms provide guidance on how to write a good bug report or feature request.
 
 ## Implement new features ⭐
-[Look here](https://github.com/bswck/poetry-pipx/issues?q=is%3Aopen+label%3Aenhancement+sort%3Aupdated-desc).
+[Look here](https://github.com/bswck/poetry-apps/issues?q=is%3Aopen+label%3Aenhancement+sort%3Aupdated-desc).
 Anything tagged with "enhancement" is open to whoever wants to implement it.
 
 ## Write documentation 📖
 The project could always use more documentation, whether as part of the official project
-docs. If you're interested in helping out, check the [docs/](https://github.com/bswck/poetry-pipx/tree/HEAD/docs) folder in the repository.
+docs. If you're interested in helping out, check the [docs/](https://github.com/bswck/poetry-apps/tree/HEAD/docs) folder in the repository.
 
 ## Share your feedback 🌍
-The best way to send feedback is to file an issue in the [issue tracker](https://github.com/bswck/poetry-pipx).
+The best way to send feedback is to file an issue in the [issue tracker](https://github.com/bswck/poetry-apps).
 
 If you are proposing a feature:
 
@@ -28,7 +28,7 @@ If you are proposing a feature:
 
 ## Get started! 🕹️
 
-Ready to contribute? Here's a quick guide on how to set up poetry-pipx and make a change.
+Ready to contribute? Here's a quick guide on how to set up poetry-apps and make a change.
 
 
 
@@ -37,7 +37,7 @@ Ready to contribute? Here's a quick guide on how to set up poetry-pipx and make 
 
 
 
-1.  Fork the [poetry-pipx repository](https://github.com/bswck/poetry-pipx) on GitHub.
+1.  Fork the [poetry-apps repository](https://github.com/bswck/poetry-apps) on GitHub.
 
 1.  [Install Poetry](https://python-poetry.org/docs/#installation).<br/>
     Poetry is an amazing tool for managing dependencies & virtual environments, building packages and publishing them.
@@ -63,8 +63,8 @@ Ready to contribute? Here's a quick guide on how to set up poetry-pipx and make 
 1.  Clone your fork locally and install dependencies.
 
     ```shell
-    git clone https://github.com/your-username/poetry-pipx path/to/poetry-pipx
-    cd path/to/poetry-pipx
+    git clone https://github.com/your-username/poetry-apps path/to/poetry-apps
+    cd path/to/poetry-apps
     poetry env use $(cat .python-version)
     poetry install
     ```
@@ -105,7 +105,7 @@ Ready to contribute? Here's a quick guide on how to set up poetry-pipx and make 
 ## Pull Request guidelines 📝
 1. Initially mark the PR as a draft, so that the maintainers know that you are making final touches.
 
-1. Ensure that the [test coverage](https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/poetry-pipx) is not decreased. If you add a new feature, please add tests for it. [Read more about coverage](https://coverage.readthedocs.io/en/latest/index.html).
+1. Ensure that the [test coverage](https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/poetry-apps) is not decreased. If you add a new feature, please add tests for it. [Read more about coverage](https://coverage.readthedocs.io/en/latest/index.html).
 
 1. Ensure that all GitHub checks pass. If they are disabled in your PR, ping the maintainers to request enabling them.
 

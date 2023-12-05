@@ -40,7 +40,7 @@ determine_project_path() {
 
 ensure_gh_environment() {
     # Ensure that the GitHub environment exists
-    echo "$(jq -n '{"deployment_branch_policy": {"protected_branches": false, "custom_branch_policies": true}}' | gh api -H "Accept: application/vnd.github+json" -X PUT "/repos/bswck/poetry-pipx/environments/$1" --input -)" > /dev/null 2>&1 || return 1
+    echo "$(jq -n '{"deployment_branch_policy": {"protected_branches": false, "custom_branch_policies": true}}' | gh api -H "Accept: application/vnd.github+json" -X PUT "/repos/bswck/poetry-apps/environments/$1" --input -)" > /dev/null 2>&1 || return 1
 }
 
 supply_smokeshow_key() {

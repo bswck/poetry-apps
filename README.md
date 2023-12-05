@@ -1,14 +1,14 @@
 
-# poetry-pipx [![Package version](https://img.shields.io/pypi/v/poetry-pipx?label=PyPI)](https://pypi.org/project/poetry-pipx/) [![Supported Python versions](https://img.shields.io/pypi/pyversions/poetry-pipx.svg?logo=python&label=Python)](https://pypi.org/project/poetry-pipx/)
-[![Tests](https://github.com/bswck/poetry-pipx/actions/workflows/test.yml/badge.svg)](https://github.com/bswck/poetry-pipx/actions/workflows/test.yml)
-[![Coverage](https://coverage-badge.samuelcolvin.workers.dev/bswck/poetry-pipx.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/poetry-pipx)
+# poetry-apps [![Package version](https://img.shields.io/pypi/v/poetry-apps?label=PyPI)](https://pypi.org/project/poetry-apps/) [![Supported Python versions](https://img.shields.io/pypi/pyversions/poetry-apps.svg?logo=python&label=Python)](https://pypi.org/project/poetry-apps/)
+[![Tests](https://github.com/bswck/poetry-apps/actions/workflows/test.yml/badge.svg)](https://github.com/bswck/poetry-apps/actions/workflows/test.yml)
+[![Coverage](https://coverage-badge.samuelcolvin.workers.dev/bswck/poetry-apps.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/poetry-apps)
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Code style](https://img.shields.io/badge/code%20style-black-000000.svg?label=Code%20style)](https://github.com/psf/black)
-[![License](https://img.shields.io/github/license/bswck/poetry-pipx.svg?label=License)](https://github.com/bswck/poetry-pipx/blob/HEAD/LICENSE)
+[![License](https://img.shields.io/github/license/bswck/poetry-apps.svg?label=License)](https://github.com/bswck/poetry-apps/blob/HEAD/LICENSE)
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-A [Poetry](https://python-poetry.org/) plugin that allows [pipx](https://github.com/pypa/pipx#readme) to take precedence when installing CLI dependencies.
+A [Poetry](https://python-poetry.org/) plugin integrating global apps installed with [pipx](https://github.com/pypa/pipx#readme).
 
 # Installation
 If you want to…
@@ -17,10 +17,10 @@ If you want to…
 
 ## …use this tool in your project 💻
 ```shell
-pipx inject poetry poetry-pipx
+pipx inject poetry poetry-apps
 ```
 
-## …contribute to [poetry-pipx](https://github.com/bswck/poetry-pipx) 🚀
+## …contribute to [poetry-apps](https://github.com/bswck/poetry-apps) 🚀
 
 
 > [!Note]
@@ -28,7 +28,7 @@ pipx inject poetry poetry-pipx
 
 
 
-1.  Fork the [poetry-pipx repository](https://github.com/bswck/poetry-pipx) on GitHub.
+1.  Fork the [poetry-apps repository](https://github.com/bswck/poetry-apps) on GitHub.
 
 1.  [Install Poetry](https://python-poetry.org/docs/#installation).<br/>
     Poetry is an amazing tool for managing dependencies & virtual environments, building packages and publishing them.
@@ -54,8 +54,8 @@ pipx inject poetry poetry-pipx
 1.  Clone your fork locally and install dependencies.
 
     ```shell
-    git clone https://github.com/your-username/poetry-pipx path/to/poetry-pipx
-    cd path/to/poetry-pipx
+    git clone https://github.com/your-username/poetry-apps path/to/poetry-apps
+    cd path/to/poetry-apps
     poetry env use $(cat .python-version)
     poetry install
     ```
@@ -67,10 +67,10 @@ pipx inject poetry poetry-pipx
     pre-commit install --hook-type pre-commit --hook-type pre-push
     ```
 
-For more information on how to contribute, check out [CONTRIBUTING.md](https://github.com/bswck/poetry-pipx/blob/HEAD/CONTRIBUTING.md).<br/>
+For more information on how to contribute, check out [CONTRIBUTING.md](https://github.com/bswck/poetry-apps/blob/HEAD/CONTRIBUTING.md).<br/>
 Always happy to accept contributions! ❤️
 
 
 # Legal info
 © Copyright by Bartosz Sławecki ([@bswck](https://github.com/bswck)).
-<br />This software is licensed under the terms of [MIT License](https://github.com/bswck/poetry-pipx/blob/HEAD/LICENSE).
+<br />This software is licensed under the terms of [MIT License](https://github.com/bswck/poetry-apps/blob/HEAD/LICENSE).

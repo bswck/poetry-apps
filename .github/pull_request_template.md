@@ -1,5 +1,5 @@
 <!--
-Thank you for contributing to poetry-pipx! 🎉
+Thank you for contributing to poetry-apps! 🎉
 
 Provide a general summary of your proposed changes in the Title field above.
 -->

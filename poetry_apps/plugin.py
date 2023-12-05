@@ -8,12 +8,12 @@ from poetry.console.application import Application
 from poetry.console.commands.installer_command import InstallerCommand
 from poetry.plugins.application_plugin import ApplicationPlugin
 
-from poetry_pipx.installer import PipxPrecedenceInstaller
+from poetry_apps.installer import AppInstaller
 
 PRIORITY = 1
 
 
-class PipxPlugin(ApplicationPlugin):
+class AppsPlugin(ApplicationPlugin):
     """Allow pipx to take precedence when installing CLI apps as dependencies."""
 
     def activate(self, application: Application) -> None:
@@ -31,7 +31,11 @@ class PipxPlugin(ApplicationPlugin):
         event_name: str,  # noqa: ARG002
         dispatcher: EventDispatcher,  # noqa: ARG002
     ) -> None:
-        """Capture the install command and modify it to use pipx-aware installer."""
+        """
+        Capture any installer command (update, install).
+
+        Configure the pipx-precedence installer.
+        """
         command = event.command
         if isinstance(command, InstallerCommand):
             self.configure_installer_for_command(command, event.io)
@@ -40,7 +44,7 @@ class PipxPlugin(ApplicationPlugin):
     def configure_installer_for_command(command: InstallerCommand, io: IO) -> None:
         """Configure the pipx-precedence installer for the command."""
         poetry = command.poetry
-        installer = PipxPrecedenceInstaller(
+        installer = AppInstaller(
             io,
             command.env,
             poetry.package,

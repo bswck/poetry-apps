@@ -1,10 +1,10 @@
-site_name: "poetry-pipx"
-site_description: "A Poetry plugin that allows pipx to take precedence when installing CLI dependencies."
-site_url: "https://poetry-pipx.readthedocs.io/en/latest/"
-repo_url: "https://github.com/bswck/poetry-pipx"
-repo_name: "bswck/poetry-pipx"
+site_name: "poetry-apps"
+site_description: "A Poetry plugin integrating global apps installed with pipx."
+site_url: "https://poetry-apps.readthedocs.io/en/latest/"
+repo_url: "https://github.com/bswck/poetry-apps"
+repo_name: "bswck/poetry-apps"
 watch:
-- "poetry_pipx"
+- "poetry_apps"
 
 nav:
 - "Overview": "index.md"

@@ -1,18 +1,18 @@
 [tool.poetry]
-name = "poetry-pipx"
+name = "poetry-apps"
 version = "0.0.0"
-description = "A Poetry plugin that allows pipx to take precedence when installing CLI dependencies."
+description = "A Poetry plugin integrating global apps installed with pipx."
 authors = ["bswck <bswck.dev@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "poetry_pipx/" }]
-homepage = "https://github.com/bswck/poetry-pipx"
+packages = [{ include = "poetry_apps/" }]
+homepage = "https://github.com/bswck/poetry-apps"
 
 [tool.poetry.urls]
-Documentation = "https://poetry-pipx.readthedocs.io/en/latest/"
-Issues = "https://github.com/bswck/poetry-pipx/issues"
-Distribution = "https://pypi.org/project/poetry-pipx/"
-Coverage = "https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/poetry-pipx"
+Documentation = "https://poetry-apps.readthedocs.io/en/latest/"
+Issues = "https://github.com/bswck/poetry-apps/issues"
+Distribution = "https://pypi.org/project/poetry-apps/"
+Coverage = "https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/poetry-apps"
 
 
 [tool.poetry.dependencies]
@@ -116,12 +116,12 @@ profile = "black"
 
 [tool.towncrier]
 directory = "changes"
-package = "poetry_pipx"
+package = "poetry_apps"
 filename = "CHANGELOG.md"
 start_string = "<!-- insertion marker -->\n"
 underlines = ["", "", ""]  # We use Markdown
-title_format = "## [{version}](https://github.com/bswck/poetry-pipx/tree/{version}) – {project_date}"
-issue_format = "[#{issue}](https://github.com/bswck/poetry-pipx/issues/{issue})"
+title_format = "## [{version}](https://github.com/bswck/poetry-apps/tree/{version}) – {project_date}"
+issue_format = "[#{issue}](https://github.com/bswck/poetry-apps/issues/{issue})"
 
 [[tool.towncrier.type]]
 directory = "security"

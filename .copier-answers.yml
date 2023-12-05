@@ -2,20 +2,18 @@ _commit: 1484ec4
 _src_path: gh:bswck/skeleton
 author_username: bswck
 docs: true
-docs_slug: poetry-pipx
+docs_slug: poetry-apps
 email_address: bswck.dev@gmail.com
 github_username: bswck
 license_name: MIT
 org_full_name: Bartosz Sławecki
-package_name: poetry_pipx
-project_description: A Poetry plugin that allows pipx to take precedence when installing
-    CLI dependencies.
+package_name: poetry_apps
+project_description: A Poetry plugin integrating global apps installed with pipx.
 publish_on_pypi: true
-pypi_project_description: A Poetry plugin that allows pipx to take precedence when
-    installing CLI dependencies.
-pypi_project_name: poetry-pipx
+pypi_project_description: A Poetry plugin integrating global apps installed with pipx.
+pypi_project_name: poetry-apps
 python_version: '3.8'
-repo_name: poetry-pipx
+repo_name: poetry-apps
 test_suite: true
 use_precommit: true
 visibility: public
