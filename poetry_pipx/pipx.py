@@ -1,0 +1,1 @@
+"""Pipx CLI wrapper."""
