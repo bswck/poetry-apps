@@ -17,7 +17,7 @@ If you want to…
 
 ## …use this tool in your project 💻
 ```shell
-poetry self add poetry-pipx
+pipx inject poetry poetry-pipx
 ```
 
 ## …contribute to [poetry-pipx](https://github.com/bswck/poetry-pipx) 🚀
