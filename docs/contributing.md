@@ -49,9 +49,9 @@ Ready to contribute? Here's a quick guide on how to set up poetry-pipx and make 
 
     <sub>If you encounter any problems, refer to [the official documentation](https://python-poetry.org/docs/#installation) for the most up-to-date installation instructions.</sub>
 
-    If you want to use pipx to install dev dependencies as well, install the [export plugin](https://github.com/python-poetry/poetry-plugin-export#readme):
+    If you want to use pipx to install dev dependencies as well, install the [`poetry pipx`](https://github.com/bswck/poetry-pipx#readme) plugin:
     ```shell
-    pipx inject poetry poetry-plugin-export poetry-pipx
+    pipx inject poetry poetry-pipx
     ```
 
     Be sure to have Python 3.8 installed—if you use [pyenv](https://github.com/pyenv/pyenv#readme), simply run:
